@@ -72,6 +72,8 @@ SMBMap - Samba Share Enumerator v1.10.8 | Shawn Evans - ShawnDEvans@gmail.com
                      https://github.com/ShawnDEvans/smbmap
 """
 
+def create_dir(smbconn, share, path):
+    smbconn.createDirectory(share, path)
 
 def colored(msg, *args, **kwargs):
     global USE_TERMCOLOR
